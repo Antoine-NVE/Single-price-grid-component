@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla';
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(204, 43%, 93%);
+}
+
+.container {
+    display: grid;
+    width: 700px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 hsl(218, 22%, 67%);
+    margin: 10px 0;
+}
+
+.container > div {
+    padding: 50px;
+}
+
+.top {
+    background: white;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+
+.top h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.left {
+    background: hsl(179, 62%, 43%);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.price .value {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.price .text {
+    margin-left: 10px;
+    color: hsl(204, 43%, 93%);
+    opacity: 0.8;
+}
+
+.access {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.left a {
+    background: hsl(71, 73%, 54%);
+    text-decoration: none;
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.right {
+    background: #62c3c3;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.right p {
+    line-height: 20px;
+    font-size: 0.9rem;
+    color: hsl(204, 43%, 93%);
+    opacity: 0.9;
+}
+
+.left h2, .right h2 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .container > div {
+        padding: 25px;
+    }
+}
